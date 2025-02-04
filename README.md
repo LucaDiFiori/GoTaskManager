@@ -166,18 +166,18 @@ func delete(args interface{}) error
 ***
 ***
 
-# CONCETTI UTILI
-- Subject [#Go_CLI_Task_Manager_-_Getting_Started_with_Go]
-- Funzioni importanti [#FUNZIONI_IMPORTANTI]
-    - os.Stat [##OS.STAT]
-    - os.IsNotExist [##OS.ISNOTEXIST]
-    - os.ReadFile [##OS.READFILE]
-    - json.Unmarshal [##JSON.UNMARSHAL]
-    - json.Marshal [##JSON.MARSHAL]
-    - json.MarshalIndent [##JSON.MARSHALINDENT]
-- Interface [#INTERFACE]
-    - interface{} [##INTERFACE{}]
-    - type assertion [##TYPE_ASSERTION]
+- [Subject](#go-cli-task-manager---getting-started-with-go)
+- [Funzioni importanti](#funzioni-importanti)  
+    - [os.Stat](#osstat)  
+    - [os.IsNotExist](#osisnotexist)  
+    - [os.ReadFile](#osreadfile)  
+    - [json.Unmarshal](#jsonunmarshal)  
+    - [json.Marshal](#jsonmarshal)  
+    - [json.MarshalIndent](#jsonmarshalindent)  
+- [Interface](#interface)  
+    - [interface{}](#interface)  
+    - [type assertion](#type-assertion)  
+
 
 ***
 ***
