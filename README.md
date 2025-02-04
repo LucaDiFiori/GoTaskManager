@@ -1,8 +1,8 @@
 # DOCUMENTAZIONE
-[Descrizione e utilizzo](#descrizione-e-utilizzo)  
-[Strutture dati](#strutture-dati)  
-[Struttura Dati: Task](#struttura-dati-task)  
-[Struttura Dati: Map](#struttura-dati-map)  
+- [Descrizione e utilizzo](#descrizione-e-utilizzo)  
+- [Strutture dati](#strutture-dati)  
+	- [Struttura Dati: Task](#struttura-dati-task)  
+	- [Struttura Dati: Map](#struttura-dati-map)  
 [Funzioni](#funzioni)  
 
 ## DESCRIZIONE E UTILIZZO
