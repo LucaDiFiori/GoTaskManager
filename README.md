@@ -100,24 +100,24 @@ I comandi supportati sono:
 #### main.go
 ```go
 // La funzione checkArgsLen verifica che il numero di argomenti passati al programma sia corretto. Se il numero di 
-argomenti non è compreso tra 2 e 6, la funzione stampa un messaggio di utilizzo e termina il programma.
+//argomenti non è compreso tra 2 e 6, la funzione stampa un messaggio di utilizzo e termina il programma.
 func checkArgsLen(args *[]string)
 
 // Il main analizza gli argomenti della riga di comando per determinare quale comando eseguire. Utilizza una mappa 
-commands che associa i nomi dei comandi alle rispettive funzioni. Se il comando è valido, esegue la funzione associata 
-al comando con gli argomenti forniti. Se il comando non è valido, stampa un messaggio di errore e termina il programma.
+//commands che associa i nomi dei comandi alle rispettive funzioni. Se il comando è valido, esegue la funzione associata 
+//al comando con gli argomenti forniti. Se il comando non è valido, stampa un messaggio di errore e termina il programma.
 func main()
 ```
 
 #### storage.go
 ```go
 // La funzione readTasks legge le task dal file JSON. Se il file non esiste, restituisce una slice vuota. Se il file esiste, 
-legge il contenuto del file, deserializza i dati JSON in una slice di Task e la restituisce. Restituisce un errore se 
-la lettura del file o la deserializzazione fallisce.
+//legge il contenuto del file, deserializza i dati JSON in una slice di Task e la restituisce. Restituisce un errore se 
+//la lettura del file o la deserializzazione fallisce.
 func readTasks() ([]Task, error)
 
 // La funzione saveTasks salva le task nel file JSON. Serializza la slice di Task in formato JSON e la salva nel file 
-"tasks.json". Restituisce un errore se la serializzazione o la scrittura del file fallisce.
+//"tasks.json". Restituisce un errore se la serializzazione o la scrittura del file fallisce.
 func saveTasks(tasks []Task) error
 ```
 
@@ -127,39 +127,39 @@ func saveTasks(tasks []Task) error
 func generateNewID(tasks []Task) int 
 
 // parseAddArgs analizza gli argomenti della riga di comando per il comando "add" e restituisce il titolo e la descrizione della task. 
-Se le flag "title" e "desc" non sono fornite, utilizza gli argomenti posizionali per ottenere il titolo e la descrizione.
+// Se le flag "title" e "desc" non sono fornite, utilizza gli argomenti posizionali per ottenere il titolo e la descrizione.
 func parseAddArgs(args []string) (string, string, error)
 
 // Questa funzione analizza gli argomenti della riga di comando per i comandi che richiedono un ID erestituisce l'ID della task.
-Se la flag "id" non è fornita, utilizza gli argomenti posizionali per ottenere l'ID.
+// Se la flag "id" non è fornita, utilizza gli argomenti posizionali per ottenere l'ID.
 func parseIDArgs(args []string) (int, error)
 
 // Questa funzione legge le task esistenti dal file e le stampa. Se non ci sono task, stampa un messaggio appropriato.
 func list(args interface{}) error
 
 // addTask crea una nuova task con il titolo e la descrizione forniti e la aggiunge alla lista delle task.La funzione 
-legge le task esistenti dal file, genera un nuovo ID per la nuova task, aggiunge la nuova task alla lista e salva la lista aggiornata nel file.
+// legge le task esistenti dal file, genera un nuovo ID per la nuova task, aggiunge la nuova task alla lista e salva la lista aggiornata nel file.
 func addTask(title, description string) error
 
 // Questa funzione analizza gli argomenti della riga di comando per il comando "add" e aggiunge una nuova task con il titolo 
-e la descrizione forniti. La funzione utilizza parseAddArgs per analizzare gli argomenti e addTask per aggiungere la nuova task.
+// e la descrizione forniti. La funzione utilizza parseAddArgs per analizzare gli argomenti e addTask per aggiungere la nuova task.
 func add(args interface{}) error
 
 // Questa funzione segna la task con l'ID specificato come completata e salva le task aggiornate.La funzione legge le 
-task esistenti dal file, cerca la task con l'ID specificato, aggiorna il campo "Done" a true,e salva la lista aggiornata nel file. 
-Se la task è già completata, stampa un messaggio appropriato.
+// task esistenti dal file, cerca la task con l'ID specificato, aggiorna il campo "Done" a true,e salva la lista aggiornata nel file. 
+// Se la task è già completata, stampa un messaggio appropriato.
 func markTaskAsDone(id int) error
 
 // Questa funzione analizza gli argomenti della riga di comando per il comando "done" e segna la task con l'ID specificato come completata. 
-La funzione utilizza parseIDArgs per analizzare gli argomenti e markTaskAsDone per segnare la task come completata.
+// La funzione utilizza parseIDArgs per analizzare gli argomenti e markTaskAsDone per segnare la task come completata.
 func done(args interface{}) error
 
 // Questa funzione elimina la task con l'ID specificato dalla lista delle task e salva le task aggiornate.Legge le task esistenti dal file, 
-cerca la task con l'ID specificato, rimuove la task dalla lista,e salva la lista aggiornata nel file.
+// cerca la task con l'ID specificato, rimuove la task dalla lista,e salva la lista aggiornata nel file.
 func deleteTask(id int) error
 
 // Questa funzione analizza gli argomenti della riga di comando per il comando "delete" e elimina la task con l'ID specificato.
-Utilizza parseIDArgs per analizzare gli argomenti e deleteTask per eliminare la task.
+// Utilizza parseIDArgs per analizzare gli argomenti e deleteTask per eliminare la task.
 func delete(args interface{}) error
 ```
 
