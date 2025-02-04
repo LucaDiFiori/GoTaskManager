@@ -166,6 +166,8 @@ func delete(args interface{}) error
 ***
 ***
 
+# CONCETTI UTILI 
+
 - [Subject](#go-cli-task-manager---getting-started-with-go)
 - [Funzioni importanti](#funzioni-importanti)  
     - [os.Stat](#osstat)  
@@ -178,8 +180,6 @@ func delete(args interface{}) error
     - [interface{}](#interface)  
     - [type assertion](#type-assertion)  
 
-
-***
 ***
 
 # Go CLI Task Manager - Getting Started with Go
