@@ -1,9 +1,9 @@
 # DOCUMENTAZIONE
-- Descrizione e utilizzo [#DESCRIZIONE_E_UTILIZZO]
-- Strutture dati [##STRUTTURE_DATI]
-    - Struttura Dati: Task [######Struttura_Dati:_Task]
-    - Struttura Dati: Map [###Struttura_Dati:_Map]
-- Funzioni [##FUNZIONI]
+[Descrizione e utilizzo](#descrizione-e-utilizzo)  
+[Strutture dati](#strutture-dati)  
+[Struttura Dati: Task](#struttura-dati-task)  
+[Struttura Dati: Map](#struttura-dati-map)  
+[Funzioni](#funzioni)  
 
 ## DESCRIZIONE E UTILIZZO
 ### Descrizione del Programma
