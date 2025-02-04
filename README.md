@@ -1,5 +1,5 @@
 # DOCUMENTAZIONE
-- Descrizione e utilizzo[##DESCRIZIONE_E_UTILIZZO]
+- Descrizione e utilizzo [##DESCRIZIONE_E_UTILIZZO]
 - Strutture dati [##STRUTTURE_DATI]
     - Struttura Dati: Task [######Struttura_Dati:_Task]
     - Struttura Dati: Map [###Struttura_Dati:_Map]
