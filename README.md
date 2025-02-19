@@ -12,7 +12,7 @@ Supporta i seguenti comandi:
 - **add**: Aggiunge una nuova task con un titolo e una descrizione.
 - **list**: Elenca tutte le task esistenti.
 - **done**: Segna una task come completata utilizzando il suo ID.
-- **delete**: Elimina una task utilizzando il suo ID
+- **delete**: Elimina una task utilizzando il suo ID.
 
 Il programma utilizza un file JSON (tasks.json) per memorizzare le task. Ogni task ha un ID univoco, un titolo, una descrizione, uno stato di completamento e una data di creazione.
 
